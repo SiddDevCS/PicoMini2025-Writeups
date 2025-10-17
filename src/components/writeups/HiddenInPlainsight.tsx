@@ -141,7 +141,7 @@ pAzzword`}
           </div>
         </div>
         <p className="mt-4 text-center text-gray-700">
-          So the flag is: <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono">picoCTF{h1dd3n_1n_1m4g3_e7f5b969}</code>
+          So the flag is: <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono">{"picoCTF{" + "h1dd3n_1n_1m4g3_e7f5b969" + "}"}</code>
         </p>
       </div>
 
@@ -149,7 +149,7 @@ pAzzword`}
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">The Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}h1dd3n_1n_1m4g3_e7f5b969{'}'}
+          {"picoCTF{" + "'{'" + "}"}h1dd3n_1n_1m4g3_e7f5b969{'}'}
         </div>
       </div>
     </div>

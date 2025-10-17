@@ -135,7 +135,7 @@ int main(void) {
             <pre className="text-green-400 font-mono text-sm">
 {`username at 0x93342a0
 shell at 0x93342d0
-Enter username: picoCTF{us3rn4m3_2_sh3ll_809f901a}Hello, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcat<flag.txt. Your shell is cat<flag.txt.`}
+Enter username: {"picoCTF{" + "us3rn4m3_2_sh3ll_809f901a" + "}"}Hello, AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcat<flag.txt. Your shell is cat<flag.txt.`}
             </pre>
           </div>
         </div>
@@ -145,7 +145,7 @@ Enter username: picoCTF{us3rn4m3_2_sh3ll_809f901a}Hello, AAAAAAAAAAAAAAAAAAAAAAA
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}us3rn4m3_2_sh3ll_809f901a{'}'}
+          {"picoCTF{" + "'{'" + "}"}us3rn4m3_2_sh3ll_809f901a{'}'}
         </div>
       </div>
     </div>

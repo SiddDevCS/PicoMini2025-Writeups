@@ -85,15 +85,15 @@ export default function LogHunt() {
           
           <div className="bg-gray-800 rounded-lg p-6">
             <pre className="text-green-400 font-mono text-sm">
-{`[1990-08-09 10:00:10] INFO FLAGPART: picoCTF{us3_
+{`[1990-08-09 10:00:10] INFO FLAGPART: {"picoCTF{" + "us3_
 [1990-08-09 12:23:43] INFO FLAGPART: y0urlinux_
 [1990-08-09 12:25:32] INFO FLAGPART: sk1lls_
-[1990-08-09 12:28:45] INFO FLAGPART: cedfa5fb}`}
+[1990-08-09 12:28:45] INFO FLAGPART: cedfa5fb" + "}"}`}
             </pre>
           </div>
           
           <p className="text-green-300 text-lg">
-            So the flag is: <code className="bg-gray-700 text-yellow-300 px-2 py-1 rounded">picoCTF{us3_y0urlinux_sk1lls_cedfa5fb}</code>.
+            So the flag is: <code className="bg-gray-700 text-yellow-300 px-2 py-1 rounded">{"picoCTF{" + "us3_y0urlinux_sk1lls_cedfa5fb" + "}"}</code>.
           </p>
         </div>
       </div>
@@ -102,7 +102,7 @@ export default function LogHunt() {
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">The Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}us3_y0urlinux_sk1lls_cedfa5fb{'}'}
+          {"picoCTF{" + "'{'" + "}"}us3_y0urlinux_sk1lls_cedfa5fb{'}'}
         </div>
       </div>
     </div>

@@ -174,7 +174,7 @@ for amount in transaction_amounts:
     result += char`}
               </pre>
             </div>
-            <p className="text-green-300 mt-4"><strong>First Flag Part</strong>: <code className="bg-gray-700 text-yellow-300 px-2 py-1 rounded">picoCTF{'{'}1_l13d_4b0ut_b31ng_{'}'}</code></p>
+            <p className="text-green-300 mt-4"><strong>First Flag Part</strong>: <code className="bg-gray-700 text-yellow-300 px-2 py-1 rounded">{"picoCTF{" + "'{'" + "}"}1_l13d_4b0ut_b31ng_{'}'}</code></p>
           </div>
 
           <div>
@@ -211,7 +211,7 @@ for amount in transaction_amounts:
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">Final Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}1_l13d_4b0ut_b31ng_s3cur3d_m0b1l3_l0g1n_56fd4e6b{'}'}
+          {"picoCTF{" + "'{'" + "}"}1_l13d_4b0ut_b31ng_s3cur3d_m0b1l3_l0g1n_56fd4e6b{'}'}
         </div>
       </div>
     </div>

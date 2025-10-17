@@ -217,7 +217,7 @@ export default function CrackTheGate1() {
             <div className="text-gray-400">**Date**: Wed, 01 Oct 2025 18:15:33 GMT</div>
             <div className="text-gray-400">**Connection**: keep-alive</div>
             <div className="text-gray-400">**Keep-Alive**: timeout=5</div>
-            <div className="mt-4 text-yellow-300">{`{"success":true,"email":"ctf-player@picoctf.org","firstName":"pico","lastName":"player","flag":"picoCTF{brut4_f0rc4_7e5db33b}"}`}</div>
+            <div className="mt-4 text-yellow-300">{`{"success":true,"email":"ctf-player@picoctf.org","firstName":"pico","lastName":"player","flag":"{"picoCTF{" + "brut4_f0rc4_7e5db33b" + "}"}"}`}</div>
           </div>
         </div>
       </div>
@@ -226,7 +226,7 @@ export default function CrackTheGate1() {
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">The Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}brut4_f0rc4_7e5db33b{'}'}
+          {"picoCTF{" + "'{'" + "}"}brut4_f0rc4_7e5db33b{'}'}
         </div>
       </div>
     </div>

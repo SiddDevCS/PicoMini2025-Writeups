@@ -126,7 +126,7 @@ export default function FlagInFame() {
             Which translated is:
           </p>
           <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-            picoCTF{'{'}forensics_analysis_is_amazing_c75dd08e{'}'}
+            {"picoCTF{" + "'{'" + "}"}forensics_analysis_is_amazing_c75dd08e{'}'}
           </div>
         </div>
       </div>

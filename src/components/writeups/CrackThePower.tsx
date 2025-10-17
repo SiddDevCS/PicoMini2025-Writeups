@@ -107,7 +107,7 @@ else:
           <code>pip install gmpy2</code>
         </div>
         <p className="mt-4 text-gray-700">
-          This leaves us with the flag: <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono">picoCTF{t1ny_e_381870dd}</code>
+          This leaves us with the flag: <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono">{"picoCTF{" + "t1ny_e_381870dd" + "}"}</code>
         </p>
       </div>
 
@@ -115,7 +115,7 @@ else:
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">The Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}t1ny_e_381870dd{'}'}
+          {"picoCTF{" + "'{'" + "}"}t1ny_e_381870dd{'}'}
         </div>
       </div>
     </div>

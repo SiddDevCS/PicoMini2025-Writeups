@@ -106,7 +106,7 @@ Author                          : cGljb0NURntwdXp6bDNkX20zdGFkYXRhX2YwdW5kIV9mOT
           </div>
           
           <p className="text-green-300 text-lg">
-            The flag is: <code className="bg-gray-700 text-yellow-300 px-2 py-1 rounded">picoCTF{'{'}puzzl3d_m3tadata_f0und!_f94300c4{'}'}</code>
+            The flag is: <code className="bg-gray-700 text-yellow-300 px-2 py-1 rounded">{"picoCTF{" + "'{'" + "}"}puzzl3d_m3tadata_f0und!_f94300c4{'}'}</code>
           </p>
         </div>
       </div>
@@ -115,7 +115,7 @@ Author                          : cGljb0NURntwdXp6bDNkX20zdGFkYXRhX2YwdW5kIV9mOT
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">The Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}puzzl3d_m3tadata_f0und!_f94300c4{'}'}
+          {"picoCTF{" + "'{'" + "}"}puzzl3d_m3tadata_f0und!_f94300c4{'}'}
         </div>
       </div>
     </div>

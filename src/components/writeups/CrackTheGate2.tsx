@@ -134,13 +134,13 @@ with open(PWFILE, 'r') as f:
             <div><code>try jaOwWyI1 -&gt; {'{'}success: False{'}'}</code></div>
             <div><code>try 3HEQWIU0 -&gt; {'{'}success: False{'}'}</code></div>
             <div><code>try EI528AbD -&gt; {'{'}success: False{'}'}</code></div>
-            <div><code>try Dc7E3bM2 -&gt; {'{'}success: True, email: 'ctf-player@picoctf.org', firstName: 'pico', lastName: 'player', flag: 'picoCTF{xff_byp4ss_brut3_f6cca7d4}'{'}'}</code></div>
+            <div><code>try Dc7E3bM2 -&gt; {'{'}success: True, email: 'ctf-player@picoctf.org', firstName: 'pico', lastName: 'player', flag: '{"picoCTF{" + "xff_byp4ss_brut3_f6cca7d4" + "}"}'{'}'}</code></div>
             <div className="text-yellow-300"><code>FOUND! Dc7E3bM2</code></div>
-            <div className="text-yellow-300"><code>FLAG: picoCTF{xff_byp4ss_brut3_f6cca7d4}</code></div>
+            <div className="text-yellow-300"><code>FLAG: {"picoCTF{" + "xff_byp4ss_brut3_f6cca7d4" + "}"}</code></div>
           </div>
         </div>
         <p className="mt-4 text-gray-700">
-          So the flag is: <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono">picoCTF{xff_byp4ss_brut3_f6cca7d4}</code>
+          So the flag is: <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded font-mono">{"picoCTF{" + "xff_byp4ss_brut3_f6cca7d4" + "}"}</code>
         </p>
       </div>
 
@@ -148,7 +148,7 @@ with open(PWFILE, 'r') as f:
       <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-l-4 border-green-500">
         <h2 className="text-3xl font-bold text-green-800 mb-6">The Flag</h2>
         <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl font-mono text-xl font-bold shadow-lg">
-          picoCTF{'{'}xff_byp4ss_brut3_f6cca7d4{'}'}
+          {"picoCTF{" + "'{'" + "}"}xff_byp4ss_brut3_f6cca7d4{'}'}
         </div>
       </div>
     </div>
