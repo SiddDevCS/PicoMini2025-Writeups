@@ -1,0 +1,31 @@
+import Link from 'next/link'
+
+export default function Navigation() {
+  return (
+    <nav className="bg-white shadow-sm border-b">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">P</span>
+            </div>
+            <span className="text-xl font-bold text-gray-900">PicoMini CTF 2025</span>
+          </Link>
+          
+          <div className="flex items-center space-x-6">
+            <Link 
+              href="/" 
+              className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+            >
+              All Write-ups
+            </Link>
+            <div className="text-sm text-gray-500">
+              by Sidd Sehgal
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
