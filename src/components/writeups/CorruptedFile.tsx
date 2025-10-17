@@ -39,7 +39,7 @@ export default function CorruptedFile() {
           <div>
             <h3 className="text-2xl font-bold text-green-700 mb-4">Hints</h3>
             <ul className="space-y-2 text-gray-700">
-              <li>• Try checking the file's header.</li>
+              <li>• Try checking the file&apos;s header.</li>
               <li>• JPEG</li>
               <li>• Tools like xxd or hexdump can help you inspect and edit file bytes.</li>
             </ul>
@@ -57,7 +57,7 @@ export default function CorruptedFile() {
           </p>
           
           <p className="text-green-300 text-lg">
-            Let's enumerate and see details about the file. Keep the hints in mind. I will start by checking the file's details:
+            Let&apos;s enumerate and see details about the file. Keep the hints in mind. I will start by checking the file&apos;s details:
           </p>
           
           <div className="bg-gray-800 rounded-lg p-6">

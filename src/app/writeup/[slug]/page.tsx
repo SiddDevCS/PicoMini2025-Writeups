@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
 import { getWriteupComponent, getAllWriteupSlugs } from '@/lib/writeupComponents'
 import WriteupNavigation from '@/components/WriteupNavigation'
 
@@ -11,6 +12,64 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({
     slug: slug,
   }))
+}
+
+export async function generateMetadata({ params }: WriteupPageProps): Promise<Metadata> {
+  const { slug } = await params
+  const writeupData = getWriteupComponent(slug)
+
+  if (!writeupData) {
+    return {
+      title: 'Write-up Not Found',
+    }
+  }
+
+  const baseUrl = 'https://picomini2025-writeups.vercel.app'
+  const writeupUrl = `${baseUrl}/writeup/${encodeURIComponent(slug)}`
+
+  return {
+    title: `${writeupData.title} | PicoMini CTF 2025 Write-ups`,
+    description: writeupData.description,
+    keywords: [
+      'PicoMini CTF 2025',
+      writeupData.title,
+      writeupData.category,
+      'CTF write-up',
+      'cybersecurity',
+      'penetration testing',
+      'security research'
+    ],
+    authors: [{ name: 'Siddharth Sehgal' }],
+    openGraph: {
+      title: `${writeupData.title} | PicoMini CTF 2025 Write-ups`,
+      description: writeupData.description,
+      url: writeupUrl,
+      type: 'article',
+      publishedTime: '2025-01-17T00:00:00.000Z',
+      modifiedTime: new Date().toISOString(),
+      authors: ['Siddharth Sehgal'],
+      section: writeupData.category,
+      tags: [writeupData.category, 'CTF', 'Cybersecurity'],
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: `${writeupData.title} - PicoMini CTF 2025 Write-up`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${writeupData.title} | PicoMini CTF 2025 Write-ups`,
+      description: writeupData.description,
+      images: ['/og-image.png'],
+      creator: '@sidddevcs',
+    },
+    alternates: {
+      canonical: writeupUrl,
+    },
+  }
 }
 
 export default async function WriteupPage({ params }: WriteupPageProps) {

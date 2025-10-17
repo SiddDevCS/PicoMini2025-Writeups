@@ -7,7 +7,7 @@ export default function CrackTheGate1() {
       <div className="bg-gradient-to-r from-orange-50 to-red-100 rounded-2xl p-8 border-l-4 border-orange-500">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Crack the Gate 1</h1>
         <p className="text-xl text-gray-700 leading-relaxed">
-          We're in the middle of an investigation. One of our persons of interest, ctf player, is believed to be 
+          We&apos;re in the middle of an investigation. One of our persons of interest, ctf player, is believed to be 
           hiding sensitive data inside a restricted web portal.
         </p>
       </div>
@@ -20,11 +20,11 @@ export default function CrackTheGate1() {
           <div>
             <h3 className="text-2xl font-bold text-green-700 mb-4">Description</h3>
             <p className="text-gray-700 leading-relaxed text-lg">
-              We're in the middle of an investigation. One of our persons of interest, ctf player, is believed to be 
-              hiding sensitive data inside a restricted web portal. We've uncovered the email address he uses to log in: 
+              We&apos;re in the middle of an investigation. One of our persons of interest, ctf player, is believed to be 
+              hiding sensitive data inside a restricted web portal. We&apos;ve uncovered the email address he uses to log in: 
               <code className="bg-red-100 text-red-800 px-2 py-1 rounded font-mono ml-2">ctf-player@picoctf.org</code>. 
-              Unfortunately, we don't know the password, and the usual guessing techniques haven't worked. But something 
-              feels off... it's almost like the developer left a secret way in. Can you figure it out?
+              Unfortunately, we don&apos;t know the password, and the usual guessing techniques haven&apos;t worked. But something 
+              feels off... it&apos;s almost like the developer left a secret way in. Can you figure it out?
             </p>
             <p className="mt-4 text-gray-600">
               Additional details will be available after launching your challenge instance.
@@ -47,7 +47,7 @@ export default function CrackTheGate1() {
         
         <div className="space-y-6">
           <p className="text-green-300 text-lg">
-            Let's start by launching the instance.
+            Let&apos;s start by launching the instance.
           </p>
           
           <p className="text-green-300 text-lg">

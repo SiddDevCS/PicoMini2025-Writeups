@@ -7,8 +7,53 @@ export default function Home() {
   const totalWriteups = Object.values(categories).flat().length
   const categoryCount = Object.keys(categories).length
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "PicoMini CTF 2025 Write-ups Collection",
+    "description": "Comprehensive collection of detailed write-ups for PicoMini CTF 2025 challenges covering Web Exploitation, Reverse Engineering, Cryptography, Forensics, Binary Exploitation, and General Skills.",
+    "url": "https://picomini2025-writeups.vercel.app",
+    "author": {
+      "@type": "Person",
+      "name": "Siddharth Sehgal"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Siddharth Sehgal"
+    },
+    "datePublished": "2025-01-17",
+    "dateModified": new Date().toISOString(),
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": totalWriteups,
+      "itemListElement": Object.values(categories).flat().map((writeup, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "Article",
+          "name": writeup.title,
+          "description": writeup.description,
+          "url": `https://picomini2025-writeups.vercel.app/writeup/${encodeURIComponent(writeup.slug)}`,
+          "author": {
+            "@type": "Person",
+            "name": "Siddharth Sehgal"
+          },
+          "about": {
+            "@type": "Thing",
+            "name": writeup.category
+          }
+        }
+      }))
+    }
+  }
+
   return (
-    <div className="space-y-8">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="space-y-8">
       <div className="text-center">
         <div className="mb-8">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
@@ -70,6 +115,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-    </div>
+      </div>
+    </>
   )
 }

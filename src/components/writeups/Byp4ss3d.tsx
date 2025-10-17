@@ -20,10 +20,10 @@ export default function Byp4ss3d() {
           <div>
             <h3 className="text-2xl font-bold text-green-700 mb-4">Description</h3>
             <p className="text-gray-700 leading-relaxed text-lg">
-              A university's online registration portal asks students to upload their ID cards for verification. 
-              The developer put some filters in place to ensure only image files are uploaded but are they enough? 
-              Take a look at how the upload is implemented. Maybe there's a way to slip past the checks and interact 
-              with the server in ways you shouldn't.
+          A university&apos;s online registration portal asks students to upload their ID cards for verification. 
+          The developer put some filters in place to ensure only image files are uploaded but are they enough? 
+          Take a look at how the upload is implemented. Maybe there&apos;s a way to slip past the checks and interact 
+          with the server in ways you shouldn&apos;t.
             </p>
             <p className="mt-4 text-gray-600">
               Additional details will be available after launching your challenge instance.
