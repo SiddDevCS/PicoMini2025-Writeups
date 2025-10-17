@@ -36,7 +36,7 @@ export function getWriteups(): Writeup[] {
       const category = data.category || categoryMapping[title] || 'General'
       
       // Preprocess markdown to convert Obsidian-style image syntax to standard markdown
-      let processedContent = content.replace(/!\[\[([^\]]+)\]\]/g, (match, imagePath) => {
+      const processedContent = content.replace(/!\[\[([^\]]+)\]\]/g, (match, imagePath) => {
         // Convert ![[image.png]] to ![alt text](/images/image.png)
         const imageName = imagePath.split('/').pop() || imagePath
         const altText = imageName.replace(/\.[^/.]+$/, '') // Remove file extension for alt text
@@ -73,7 +73,7 @@ export function getWriteupBySlug(slug: string): Writeup | null {
     const category = data.category || categoryMapping[title] || 'General'
     
     // Preprocess markdown to convert Obsidian-style image syntax to standard markdown
-    let processedContent = content.replace(/!\[\[([^\]]+)\]\]/g, (match, imagePath) => {
+    const processedContent = content.replace(/!\[\[([^\]]+)\]\]/g, (match, imagePath) => {
       // Convert ![[image.png]] to ![alt text](/images/image.png)
       const imageName = imagePath.split('/').pop() || imagePath
       const altText = imageName.replace(/\.[^/.]+$/, '') // Remove file extension for alt text
