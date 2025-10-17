@@ -1,16 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-// Function to fix flags in a file
+// Function to fix flags in a file using template literals
 function fixFlagsInFile(filePath) {
   try {
     let content = fs.readFileSync(filePath, 'utf8');
     
-    // Replace picoCTF{flag} with picoCTF{'{'}flag{'}'}
-    content = content.replace(/picoCTF\{([^}]+)\}/g, "picoCTF{'{'}$1{'}'}");
-    
-    // Fix any double-escaped flags that might have been created
-    content = content.replace(/picoCTF\{'\{'\}'\{'\}'\}([^}]+)\{'}'/g, "picoCTF{'{'}$1{'}'}");
+    // Replace picoCTF{flag} with {`picoCTF{flag}`}
+    content = content.replace(/picoCTF\{([^}]+)\}/g, "{`picoCTF{$1}`}");
     
     fs.writeFileSync(filePath, content, 'utf8');
     console.log(`Fixed flags in: ${filePath}`);
@@ -39,4 +36,4 @@ function fixAllWriteupFiles(dir) {
 const writeupsDir = path.join(__dirname, 'src', 'components', 'writeups');
 fixAllWriteupFiles(writeupsDir);
 
-console.log('Flag fixing completed!');
+console.log('Flag fixing with template literals completed!');
