@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "prebuild": "node fix-flags.js",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
